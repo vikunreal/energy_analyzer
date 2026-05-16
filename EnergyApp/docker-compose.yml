@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  energy-calculator:
+    build: .
+    container_name: energy_bill_analyzer
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/London # Sets timezone for proper datetime parsing
