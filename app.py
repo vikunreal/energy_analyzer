@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import datetime
 
+def is_off_peak(time_obj, start_time, end_time):
+    """Determines if a given time falls within the defined off-peak window."""
+    return start_time <= time_obj <= end_time
+
 st.set_page_config(page_title="Energy Bill Calculator", layout="wide", page_icon="⚡")
 
 st.title("⚡ Energy Bill Data Analyzer")
@@ -90,6 +94,7 @@ if uploaded_file is not None:
 
         # Visual Breakdowns
         st.markdown("---")
+
         left_chart, right_chart = st.columns(2)
 
         with left_chart:
