@@ -1,4 +1,4 @@
-content = """# ⚡ Energy Bill Data Analyzer
+# ⚡ Energy Bill Data Analyzer
 
 A lightweight, containerized Python application built with **Streamlit** and **Pandas** to help you analyze your energy consumption and estimate your bills. By uploading your smart meter's CSV export and entering your tariff details, you can see exactly where your money is going.
 
@@ -38,3 +38,4 @@ A lightweight, containerized Python application built with **Streamlit** and **P
    Run the following command in your terminal:
    ```bash
    docker compose up -d --build
+   ```
